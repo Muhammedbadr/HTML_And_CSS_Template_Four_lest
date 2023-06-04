@@ -1,0 +1,239 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+/* Start Box */
+/* start flex */
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.d-block {
+  display: block;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+@media(max-width:767px) {
+  .block-mobile {
+    display: block;
+  }
+
+  .high-mobile {
+    display: none;
+  }
+}
+
+/* end flex */
+
+/* start padding + margin */
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-15 {
+  padding: 10px;
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+
+
+
+/* end padding */
+
+
+/* start center */
+.txt-c {
+  text-align: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+@media(max-width:767px) {
+  .txt-c-mobile {
+    text-align: center;
+  }
+}
+
+/* end center */
+
+/* start font */
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+/* end font */
+
+/* start color */
+.c-black {
+  color: black;
+}
+
+.c-grey {
+  color: var(--grey-color);
+}
+
+.c-white {
+  color: white;
+}
+
+.c-red {
+  color: var(--red-color);
+}
+
+.c-blue {
+  color: var(--blue-color);
+}
+
+.c-green {
+  color: var(--green-color);
+}
+
+.c-orang {
+  color: var(--orange-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.bg-orang {
+  background-color: var(--orange-color);
+}
+
+.bg-white {
+  background-color: rgb(255, 255, 255);
+}
+
+.bg-eee {
+  background-color: #eee;
+}
+
+.bg-blue {
+  background-color: var(--blue-color);
+}
+
+
+
+/* end color */
+
+/* start border */
+.red-6 {
+  border-radius: 6px;
+}
+
+.red-10 {
+  border-radius: 10px
+}
+
+.b-none {
+  border: none;
+}
+
+/* end border */
+
+/* start position */
+.p-relative {
+  position: relative;
+}
+
+/* end position */
+
+/* start components */
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+/* end components */
