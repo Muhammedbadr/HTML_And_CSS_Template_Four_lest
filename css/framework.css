@@ -100,6 +100,10 @@
   margin-bottom: 10px;
 }
 
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -228,6 +232,9 @@
   color: var(--orange-color);
 }
 
+
+
+
 .bg-red {
   background-color: var(--red-color);
 }
@@ -252,6 +259,11 @@
   background-color: var(--blue-color);
 }
 
+.bg-grey {
+  background-color: var(--grey-color);
+}
+
+
 
 
 /* end color */
@@ -271,6 +283,10 @@
 
 .b-none {
   border: none;
+}
+
+.border-ccc {
+  border: 1px solid #ccc;
 }
 
 /* end border */

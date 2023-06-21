@@ -719,8 +719,70 @@ ul {
   font-size: 13px;
 }
 
+.Settings-page {
+  grid-template-columns: repeat(auto-fill, minmax (500px, 1fr));
+}
+
+@media(max-width:767px) {
+  .Settings-page {
+    grid-template-columns: minmax (500px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 20px;
+  }
+}
 
 
+.Settings-page .close-massage {
+  border: 1px solid #ccc;
+  resize: none;
+  min-height: 150px;
+}
+
+.Settings-page .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
+
+.Settings-page .sec-box {
+  padding-bottom: 15px;
+}
+
+.Settings-page .sec-box:not(:last-of-type) {
+  border-bottom: 1px solid var(--body-color);
+}
+
+.Settings-page .sec-box .buttom {
+  transition: var(--main-transition);
+}
+
+.Settings-page .sec-box .buttom:hover {
+  background-color: var(--main-color-alt);
+}
+
+
+.Settings-page .social-boxes i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border-radius: 6px 0 0 6px;
+  border-right: none;
+  border: 1px solid #ddd;
+  transition: var(--main-transition);
+}
+
+.Settings-page .social-boxes input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 15px;
+  border-radius: 0 6px 6px 0;
+
+}
+
+.Settings-page .social-boxes>div:focus-within i {
+  color: black;
+}
 
 
 .toggle-checkbox {
@@ -759,7 +821,7 @@ ul {
 
 .toggle-checkbox:checked+.toggle-switch {
   background-color: var(--main-color);
-  color: black;
+
 }
 
 .toggle-checkbox:checked+.toggle-switch::before {
@@ -767,6 +829,10 @@ ul {
   left: 50px;
   color: var(--main-color);
 }
+
+
+
+
 
 @keyframes change-color {
   from {
