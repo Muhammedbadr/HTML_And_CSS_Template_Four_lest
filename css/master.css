@@ -611,6 +611,16 @@ ul {
   cursor: pointer;
 }
 
+
+
+/*social-media*/
+
+
+
+
+
+
+
 .social-media .box {
   padding-left: 70px;
 }
@@ -672,6 +682,9 @@ ul {
   background-color: #833ab4;
 }
 
+
+
+
 .projects .responsive-table {
   overflow-x: auto;
 }
@@ -719,6 +732,10 @@ ul {
   font-size: 13px;
 }
 
+
+
+/*settings-page*/
+
 .Settings-page {
   grid-template-columns: repeat(auto-fill, minmax (500px, 1fr));
 }
@@ -761,6 +778,7 @@ ul {
 }
 
 
+
 .Settings-page .social-boxes i {
   width: 40px;
   height: 40px;
@@ -784,6 +802,141 @@ ul {
   color: black;
 }
 
+
+
+.Settings-page .control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.Settings-page .control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.Settings-page .control label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  border-radius: 4px;
+  height: 14px;
+  border: 2px solid var(--grey-color);
+  margin-top: -9px;
+
+}
+
+.Settings-page .control label:hover::before {
+  border-color: var(--main-color);
+  box-shadow: 2px 2px 4px var(--main-color), -2px -2px 4px var(--main-color)
+}
+
+.Settings-page .control label::after {
+  font-family: var(--Font-Awesome);
+  content: "\f00c";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  background-color: var(--main-color-alt);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: var(--main-transition);
+}
+
+.Settings-page .control input[type="checkbox"]:checked+label::after {
+  transform: scale(1);
+}
+
+
+
+
+/*backup-control*/
+
+
+
+
+.backup-control input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.backup-control .date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.backup-control .date label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--grey-color);
+
+
+}
+
+.backup-control .date label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2.5px;
+  width: 12px;
+  height: 12px;
+  background: var(--main-color);
+  border-radius: 50%;
+  transition: var(--main-transition);
+  transform: scale(0);
+}
+
+.backup-control .date input[type="radio"]:checked+label::before {
+  border-color: var(--main-color);
+}
+
+.backup-control .date input[type="radio"]:checked+label::after {
+  transform: scale(1);
+}
+
+.backup-control .servers {
+  border-top: 1px solid var(--body-color);
+  padding-top: 20px;
+}
+
+@media(max-width:767px) {
+  .backup-control .servers {
+    flex-wrap: wrap;
+  }
+}
+
+.backup-control .servers .server {
+  border: 2px solid #eae9e9;
+  position: relative;
+}
+
+.backup-control .servers .server label {
+  cursor: pointer;
+}
+
+.backup-control .servers input[type="radio"]:checked+.server {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
 
 .toggle-checkbox {
   -webkit-appearance: none;
@@ -829,6 +982,104 @@ ul {
   left: 50px;
   color: var(--main-color);
 }
+
+
+
+
+/*profile-page*/
+
+
+
+@media(max-width:767px) {
+  .profile-page .overviwe {
+    flex-direction: column;
+  }
+}
+
+.profile-page .avatar-box {
+  width: 300px;
+  border-right: 1px solid #eee;
+
+}
+
+@media(max-width:767px) {
+  .profile-page .avatar-box {
+    border-right: none;
+
+  }
+}
+
+.profile-page .avatar-box>img {
+  width: 120px;
+  height: 120px;
+}
+
+.profile-page .avatar-box .level {
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+}
+
+.profile-page .avatar-box .level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 6px;
+}
+
+
+
+.profile-page .info-box .box {
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: var(--main-transition);
+
+}
+
+
+.profile-page .info-box:hover {
+  background-color: #f9f9f9f9;
+}
+
+.profile-page .info-box .box>div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+
+.profile-page .info-box h4 {
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
