@@ -1155,6 +1155,257 @@ ul {
 
 
 
+.projects-page {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media(max-width:767px) {
+  .projects-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.projects-page .project .data {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.projects-page .project .team {
+  position: relative;
+  min-height: 80px;
+}
+
+.projects-page .project .team img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.projects-page .project .team a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.projects-page .project .team a:nth-child(2) {
+  left: 25px;
+}
+
+.projects-page .project .team a:nth-child(3) {
+  left: 50px;
+}
+
+.projects-page .project .team a:nth-child(4) {
+  left: 75px;
+}
+
+.projects-page .project .team a:nth-child(5) {
+  left: 100px;
+}
+
+.projects-page .project .team a:hover {
+  z-index: 10000;
+}
+
+.projects-page .project .do {
+  justify-content: end;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+@media(max-width:767px) {
+  .projects-page .project .do {
+    flex-direction: column;
+  }
+}
+
+
+
+.projects-page .project .do span {
+  padding: 3px 8px;
+  margin-left: 10px;
+  width: fit-content;
+}
+
+@media(max-width:767px) {
+  .projects-page .project .do span:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.projects-page .project .info {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+@media(max-width:767px) {
+  .projects-page .project .info {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+.projects-page .project .info .prog {
+  height: 8px;
+  width: 260px;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+@media(max-width:767px) {
+  .projects-page .project .prog {
+    margin-bottom: 15px;
+  }
+}
+
+.projects-page .project .info .prog span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media(max-width:767px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+.courses-page .course {
+  overflow: hidden;
+  border: 6px;
+}
+
+.courses-page .course .cover {
+  max-width: 100%;
+}
+
+.courses-page .course .instructor {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 20px;
+  left: 20px;
+  border: 2px solid white;
+}
+
+.courses-page .course .info {
+  border-top: 1px solid #eee;
+  font-size: 13px;
+}
+
+.courses-page .course .info .title {
+  position: absolute;
+  top: -13px;
+  transform: translateX(-50%);
+  left: 50%;
+  font-size: 13px;
+}
+
+
+.courses-page .course .description {
+  line-height: 1.7;
+}
+
+
+
+
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media(max-width:767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+.friends-page .contact {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+
+}
+
+.friends-page .contact i {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 13px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.friends-page .contact i:hover {
+  background-color: #1787e0;
+  color: white;
+}
+
+.friends-page .friend .icons {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.friends-page .friend .icons i {
+  margin-right: 5px;
+}
+
+.friends-page .friend .icons .vip {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  opacity: 0.2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
