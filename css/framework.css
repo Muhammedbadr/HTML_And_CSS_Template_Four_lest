@@ -311,6 +311,10 @@
   position: relative;
 }
 
+.p-absolute {
+  position: absolute;
+}
+
 /* end position */
 
 /* start components */
